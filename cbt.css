@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 750px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #173b70;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background: #1769aa;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #0c477b;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.timer {
+    background: #ffe5e5;
+    color: #d00000;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.progress {
+    background: #e3eaf4;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+#question {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.option {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #eaf3ff;
+    border-color: #1769aa;
+}
+
+.option input {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.navigation {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.navigation h3 {
+    margin-bottom: 15px;
+}
+
+#question-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.question-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: #ddd;
+    color: #222;
+}
+
+.question-btn.answered {
+    background: #198754;
+    color: white;
+}
+
+.question-btn.current {
+    border: 3px solid #1769aa;
+}
+
+#score {
+    font-size: 45px;
+    color: #198754;
+}
+
+#remark {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1769aa;
+    margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 18px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    button {
+        padding: 10px 14px;
+    }
+}

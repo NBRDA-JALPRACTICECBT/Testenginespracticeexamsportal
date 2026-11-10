@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Examination System</title>
+    <link rel="stylesheet" href="cbt.css">
+</head>
+<body>
+
+    <div class="container">
+ <a href="home.html">Home</a>
+        <!-- Start Page -->
+        <div id="start-screen">
+            <h1>CBT Practice Examination/Test Engine 1(Current Affairs)</h1>
+            <p>Welcome to NBRDA Computer-Based Test</p>
+
+            <input
+                type="text"
+                id="student-name"
+                placeholder="Enter your full name"
+            >
+
+             <input
+                type="text"
+                id="student-ID"
+                placeholder="Enter your ID"
+            >
+
+            <button onclick="startQuiz()">Start Examination</button>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-screen" class="hidden">
+
+            <div class="header">
+                <h2>CBT Examination/Test Engine</h2>
+                <div class="timer">
+                    Time Left: <span id="time">05:00</span>
+                </div>
+            </div>
+
+            <div class="progress">
+                <span id="progress-text">Question 1 of 5</span>
+            </div>
+
+            <h3 id="question">Question goes here</h3>
+
+            <div id="options"></div>
+
+            <div class="buttons">
+                <button onclick="previousQuestion()" id="prev-btn">
+                    Previous
+                </button>
+
+                <button onclick="nextQuestion()" id="next-btn">
+                    Next
+                </button>
+
+                <button onclick="submitQuiz()" id="submit-btn">
+                    Submit
+                </button>
+            </div>
+
+            <div class="navigation">
+                <h3>Question Navigation</h3>
+                <div id="question-numbers"></div>
+            </div>
+
+        </div>
+
+        <!-- Result Page -->
+        <div id="result-screen" class="hidden">
+            <h1>Practice Examination Completed!</h1>
+            
+            <h2 id="result-name"></h2>
+
+            <p>Your Score:</p>
+            <h1 id="score"></h1>
+
+            <p id="percentage"></p>
+            <p id="remark"></p>
+
+            <button onclick="location.reload()">
+                Take Another Test
+            </button>
+        </div>
+
+    </div>
+    <!-- Audio files -->
+
+<audio id="sound1" src="correct.mp3"></audio>
+<audio id="sound2" src="correct2.mp3"></audio>
+<audio id="sound3" src="applause.mp3"></audio>
+<audio id="sound4" src="boo.mp3"></audio>
+<audio id="sound5" src="applause2.mp3"></audio>
+<audio id="sound8" src="wel2.mp3"></audio>
+
+    <script src="cbt2.js"></script>
+</body>
+</html>

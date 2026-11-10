@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e80, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    background: #10145c;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+header h2 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #ffd700;
+}
+
+.container {
+    flex: 1;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.container h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 17px;
+    margin-bottom: 45px;
+}
+
+.engine-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.engine {
+    text-decoration: none;
+    color: white;
+    padding: 35px 20px;
+    border-radius: 18px;
+    transition: 0.3s;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+button.engine {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.engine span {
+    font-size: 45px;
+}
+
+.engine h2 {
+    margin: 15px 0;
+    font-size: 23px;
+}
+
+.engine p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.engine:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+.engine1 {
+    background: linear-gradient(135deg, #f2f, #dd2476);
+}
+
+.engine2 {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.engine3 {
+    background: linear-gradient(135deg, #396afc, #2948ff);
+}
+
+.engine4 {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+footer {
+    background: #10145c;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .engine-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container h1 {
+        font-size: 27px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+}
