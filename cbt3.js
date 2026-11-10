@@ -60,7 +60,7 @@ const questions = [
             "Too many idle animals in the livestock department",
             "Involuntary loss of employment due to excess manpower"
         ],
-        answer: 2
+        answer: 3
     },
 
     {
