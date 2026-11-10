@@ -92,7 +92,7 @@ const questions = [
             "Public Salary Regulations",
             "Personnel Service Register"
         ],
-        answer: 3
+        answer: 0
     }
 ];
 
